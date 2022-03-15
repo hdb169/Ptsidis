@@ -1,0 +1,35 @@
+Peter’s Suggestions March 12, 2022
+==========================
+
+For each bin in (x, Q2) that is HMS setting in z, phi, and in pt:
+=============================================
+1)Average Kinematics x, Q2. z. pt. Phi. Mx. W, and elsilon get multiplicity (sighad) and error :
+                                 with and without radiative Correction + with rho correction
+
+2) fit each set of results for a given bin in (x,Q2) and z with the form:
+
+             a0 * exp(-b*pt2) * (1 + a * pt * cos(phi) + b * pt**2 * cos(2phi))
+
+3)You can make plots of a0 in sixteen (x,Q2) panels (4*4 grid) vs z with diff colors for 
+     p pi+, p pi-, d pi+, d pi-  slightly offset for clarity (along x axis)
+
+4) make another 4x4 grid of results for a
+
+5) make another 4x4 grid of results for b
+
+6)The results for a0/b are the effective fragmentation function, and can be compared with predictions   say from DSS.  The results for b can be used to compare to the expecation that they will go 
+       a <Pt2> + z**2 * <kt2)
+
+To the extent that the four target- Pi+/- cases agree, it shows that the up and down quark widths are the same, and the favored and unfavored fragmentation widths are the same.
+
+7)Going futher, we can do a global fit to the b-slope results and get these individually.
+
+8)The results for a and b can be compared to various predictions and also data from COMPASS and HERMES.
+
+9)  I suggest to make one set of plots with no rho subtraction, and one with, and a thrid one with the HEPGEN results (I'll have to help you with that).
+
+10)Also, I suggest to make plots of multiplicity versus phi* for each bin in z, to check that the fit form is working OK
+
+11)Also, look at the chi2/d.f. for each one of these fits.
+
+12) In my case, I divide the (x,Q2) bins into two using HMS yptar, but for plotting purposes, I take the average.  You should have 14 (x,Q2) bins, as the other two are in spring 18.
