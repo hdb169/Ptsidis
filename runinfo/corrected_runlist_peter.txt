@@ -1,4 +1,6 @@
- run t     E0   PHMS  THHMS  PSHMS THSHMS  BCM4A livetm tkeffe tkeffp cutcut  ratee  ratep eleccleane eleccleanp  BCM1 Livtim2  pscef  hscef elreal   
+
+This is old version: various correctiosn not included
+run t     E0   PHMS  THHMS  PSHMS THSHMS  BCM4A livetm tkeffe tkeffp cutcut  ratee  ratep eleccleane eleccleanp  BCM1 Livtim2  pscef  hscef elreal   
 3427 3 10.601 -5.240 13.505  4.959 14.000 26.773 97.190  0.991  0.989 38.952   10676   19324   4201122    596817  26.62 37.792  0.973  0.933    6.5
 3421 1 10.599 -5.240 13.505  4.959 11.995 47.459 79.670  0.990  0.987 49.288   36648  201403  20106330  11012736  47.06 35.334  0.854  0.933   50.6
 3423 1 10.599 -5.240 13.505  4.959 11.995 48.206 78.730  0.990  0.988 53.593   39770  219993  20402246  11182041  47.91 52.605  0.791  0.933   75.3
