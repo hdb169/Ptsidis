@@ -1,0 +1,5412 @@
+{
+    "10": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "100": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 17700800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 12671700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 96185500000.0
+                    },
+                    "rad": {
+                        "normfac": 116301000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 551132000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 17700800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 12633800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 96185500000.0
+                    },
+                    "rad": {
+                        "normfac": 116301000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 551132000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 15333300.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 83328600000.0
+                    },
+                    "rad": {
+                        "normfac": 101236000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 496179000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 55596300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 10840900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 83328600000.0
+                    },
+                    "rad": {
+                        "normfac": 101236000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 517655000.0
+                }
+            }
+        }
+    },
+    "110": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 55402800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 44806900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 137692000000.0
+                    },
+                    "rad": {
+                        "normfac": 101022000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 685481000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 55402800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 44625800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 137692000000.0
+                    },
+                    "rad": {
+                        "normfac": 101022000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 685481000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 49954700.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 119135000000.0
+                    },
+                    "rad": {
+                        "normfac": 88026300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 599334000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 168170000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 38873700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 119135000000.0
+                    },
+                    "rad": {
+                        "normfac": 88026300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 636812000.0
+                }
+            }
+        }
+    },
+    "120": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 38633500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25796800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 136643000000.0
+                    },
+                    "rad": {
+                        "normfac": 106384000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 729330000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 38633500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25838700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 136643000000.0
+                    },
+                    "rad": {
+                        "normfac": 106384000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 729330000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 33343200.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118319000000.0
+                    },
+                    "rad": {
+                        "normfac": 92304300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 619885000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 118147000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 21710600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118319000000.0
+                    },
+                    "rad": {
+                        "normfac": 92304300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 693310000.0
+                }
+            }
+        }
+    },
+    "130": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 29458600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27010300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 119303000000.0
+                    },
+                    "rad": {
+                        "normfac": 103515000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 720622000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 29458600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26860600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 119303000000.0
+                    },
+                    "rad": {
+                        "normfac": 103515000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 720622000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 25210000.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 103491000000.0
+                    },
+                    "rad": {
+                        "normfac": 90358600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 629133000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 88562200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23047600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 103491000000.0
+                    },
+                    "rad": {
+                        "normfac": 90358600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 677759000.0
+                }
+            }
+        }
+    },
+    "140": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 20112700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16112400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 94964600000.0
+                    },
+                    "rad": {
+                        "normfac": 96764700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 669023000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 20112700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16061600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 94964600000.0
+                    },
+                    "rad": {
+                        "normfac": 96764700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 669023000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 17123300.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 82574500000.0
+                    },
+                    "rad": {
+                        "normfac": 84038600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 568182000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 63005600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 13745900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 82574500000.0
+                    },
+                    "rad": {
+                        "normfac": 84038600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 616917000.0
+                }
+            }
+        }
+    },
+    "150": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 53271300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 38700700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 153544000000.0
+                    },
+                    "rad": {
+                        "normfac": 114759000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 760077000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 53271300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 39006600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 153544000000.0
+                    },
+                    "rad": {
+                        "normfac": 114759000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 760077000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 46788900.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 132888000000.0
+                    },
+                    "rad": {
+                        "normfac": 99810100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 661408000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 156642000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 32815100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 132888000000.0
+                    },
+                    "rad": {
+                        "normfac": 99810100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 703460000.0
+                }
+            }
+        }
+    },
+    "160": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 31633800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 19647600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 146564000000.0
+                    },
+                    "rad": {
+                        "normfac": 118258000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 780373000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 31633800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 19514100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 146564000000.0
+                    },
+                    "rad": {
+                        "normfac": 118258000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 780373000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 26653500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 126380000000.0
+                    },
+                    "rad": {
+                        "normfac": 102712000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 677090000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 94824400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16595900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 126380000000.0
+                    },
+                    "rad": {
+                        "normfac": 102712000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 722642000.0
+                }
+            }
+        }
+    },
+    "170": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21777800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26406200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 122778000000.0
+                    },
+                    "rad": {
+                        "normfac": 112363000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 708600000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 21777800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26528200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 122778000000.0
+                    },
+                    "rad": {
+                        "normfac": 112363000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 708600000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 18170700.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 106060000000.0
+                    },
+                    "rad": {
+                        "normfac": 97755300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 612086000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 63728400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23494700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 106060000000.0
+                    },
+                    "rad": {
+                        "normfac": 97755300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 647206000.0
+                }
+            }
+        }
+    },
+    "180": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 18374300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 13580400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 96960100000.0
+                    },
+                    "rad": {
+                        "normfac": 106631000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 669080000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 18374300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 13670700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 96960100000.0
+                    },
+                    "rad": {
+                        "normfac": 106631000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 669080000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 15861400.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 84348800000.0
+                    },
+                    "rad": {
+                        "normfac": 92856300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 577573000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 53586300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 11584100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 84348800000.0
+                    },
+                    "rad": {
+                        "normfac": 92856300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 611770000.0
+                }
+            }
+        }
+    },
+    "190": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 49401800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 44413100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 119693000000.0
+                    },
+                    "rad": {
+                        "normfac": 86122800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 715608000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 49401800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 44844100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 119693000000.0
+                    },
+                    "rad": {
+                        "normfac": 86122800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 715608000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 44382000.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 103691000000.0
+                    },
+                    "rad": {
+                        "normfac": 74780100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 607460000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 138853000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 39336800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 103691000000.0
+                    },
+                    "rad": {
+                        "normfac": 74780100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 673844000.0
+                }
+            }
+        }
+    },
+    "20": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "200": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 36719500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27511200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 123921000000.0
+                    },
+                    "rad": {
+                        "normfac": 93414300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 825015000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 36719500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27591900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 123921000000.0
+                    },
+                    "rad": {
+                        "normfac": 93414300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 825015000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 32755400.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 107350000000.0
+                    },
+                    "rad": {
+                        "normfac": 81065900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 699674000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 105602000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23925100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 107350000000.0
+                    },
+                    "rad": {
+                        "normfac": 81065900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 765925000.0
+                }
+            }
+        }
+    },
+    "210": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 27686100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26841000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 113171000000.0
+                    },
+                    "rad": {
+                        "normfac": 92785000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 822589000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 27686100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26844700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 113171000000.0
+                    },
+                    "rad": {
+                        "normfac": 92785000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 822589000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 24983100.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97991100000.0
+                    },
+                    "rad": {
+                        "normfac": 80726900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 704205000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 79827300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23328400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97991100000.0
+                    },
+                    "rad": {
+                        "normfac": 80726900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 769544000.0
+                }
+            }
+        }
+    },
+    "220": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21119700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15447500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 92931800000.0
+                    },
+                    "rad": {
+                        "normfac": 88046000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 733576000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 21119700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15365500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 92931800000.0
+                    },
+                    "rad": {
+                        "normfac": 88046000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 733576000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 18270800.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 80748900000.0
+                    },
+                    "rad": {
+                        "normfac": 76763900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 650437000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 60628500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 13281300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 80748900000.0
+                    },
+                    "rad": {
+                        "normfac": 76763900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 675203000.0
+                }
+            }
+        }
+    },
+    "230": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 43961800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 43355200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102074000000.0
+                    },
+                    "rad": {
+                        "normfac": 72634200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 643360000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 43961800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 43337800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102074000000.0
+                    },
+                    "rad": {
+                        "normfac": 72634200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 643360000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "240": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 34552400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28729600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 106692000000.0
+                    },
+                    "rad": {
+                        "normfac": 79049100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 732530000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 34552400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28887600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 106692000000.0
+                    },
+                    "rad": {
+                        "normfac": 79049100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 732530000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "250": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 27231000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27898400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 99617200000.0
+                    },
+                    "rad": {
+                        "normfac": 79817300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 744275000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 27231000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27763300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 99617200000.0
+                    },
+                    "rad": {
+                        "normfac": 79817300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 744275000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "260": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21674500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16348100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 84454400000.0
+                    },
+                    "rad": {
+                        "normfac": 76612700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 640397000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 21674500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16406500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 84454400000.0
+                    },
+                    "rad": {
+                        "normfac": 76612700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 640397000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "270": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 53269100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 41383900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 142822000000.0
+                    },
+                    "rad": {
+                        "normfac": 104453000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 795963000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 53269100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 41776300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 142822000000.0
+                    },
+                    "rad": {
+                        "normfac": 104453000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 795963000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "280": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 34966800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 21985700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 141612000000.0
+                    },
+                    "rad": {
+                        "normfac": 110261000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 842289000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 34966800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 22318200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 141612000000.0
+                    },
+                    "rad": {
+                        "normfac": 110261000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 842289000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "290": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23450300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25662300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 122254000000.0
+                    },
+                    "rad": {
+                        "normfac": 105635000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 796335000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 23450300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25627800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 122254000000.0
+                    },
+                    "rad": {
+                        "normfac": 105635000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 796335000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "30": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "300": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 18872600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 14384500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97261700000.0
+                    },
+                    "rad": {
+                        "normfac": 100041000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 737146000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 18872600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 14370500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97261700000.0
+                    },
+                    "rad": {
+                        "normfac": 100041000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 737146000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "310": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "320": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 51127800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 45283700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 120173000000.0
+                    },
+                    "rad": {
+                        "normfac": 87495200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 641524000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 51127800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 45086200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 120173000000.0
+                    },
+                    "rad": {
+                        "normfac": 87495200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 641524000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "330": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 39389700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28876600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 122875000000.0
+                    },
+                    "rad": {
+                        "normfac": 93357800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 718450000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 39389700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28988800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 122875000000.0
+                    },
+                    "rad": {
+                        "normfac": 93357800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 718450000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "340": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 30557000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26832300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 111071000000.0
+                    },
+                    "rad": {
+                        "normfac": 93192900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 732840000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 30557000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26758000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 111071000000.0
+                    },
+                    "rad": {
+                        "normfac": 93192900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 732840000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "350": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21468200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16276500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90908200000.0
+                    },
+                    "rad": {
+                        "normfac": 87175600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 656030000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 21468200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16324700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90908200000.0
+                    },
+                    "rad": {
+                        "normfac": 87175600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 656030000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "360": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 50123200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 37202700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 148744000000.0
+                    },
+                    "rad": {
+                        "normfac": 109606000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 833300000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 50123200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 37685300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 148744000000.0
+                    },
+                    "rad": {
+                        "normfac": 109606000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 833300000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "370": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 30737500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18659600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 143852000000.0
+                    },
+                    "rad": {
+                        "normfac": 114091000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 854554000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 30737500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18655500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 143852000000.0
+                    },
+                    "rad": {
+                        "normfac": 114091000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 854554000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "380": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 55242500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 40329800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 156211000000.0
+                    },
+                    "rad": {
+                        "normfac": 117684000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 696338000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 55242500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 40168600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 156211000000.0
+                    },
+                    "rad": {
+                        "normfac": 117684000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 696338000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "390": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 32544800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20802900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 147720000000.0
+                    },
+                    "rad": {
+                        "normfac": 120629000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 710175000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 32544800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20897200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 147720000000.0
+                    },
+                    "rad": {
+                        "normfac": 120629000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 710175000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "40": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "400": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 24107000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27322900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 123371000000.0
+                    },
+                    "rad": {
+                        "normfac": 114759000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 642232000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 24107000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27142400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 123371000000.0
+                    },
+                    "rad": {
+                        "normfac": 114759000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 642232000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "410": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "420": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 37847600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 40073500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 88187900000.0
+                    },
+                    "rad": {
+                        "normfac": 61711100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 617997000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 37847600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 40517800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 88187900000.0
+                    },
+                    "rad": {
+                        "normfac": 61711100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 617997000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "430": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 31194700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26334100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 95732000000.0
+                    },
+                    "rad": {
+                        "normfac": 69433800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 712674000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 31194700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26580400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 95732000000.0
+                    },
+                    "rad": {
+                        "normfac": 69433800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 712674000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "440": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23266100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25848600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90646600000.0
+                    },
+                    "rad": {
+                        "normfac": 70136100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 699902000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 23266100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25845900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90646600000.0
+                    },
+                    "rad": {
+                        "normfac": 70136100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 699902000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "450": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 19564500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15000300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78224700000.0
+                    },
+                    "rad": {
+                        "normfac": 68842900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 626118000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 19564500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15034600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78224700000.0
+                    },
+                    "rad": {
+                        "normfac": 68842900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 626118000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "460": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 28896700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16807000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 132611000000.0
+                    },
+                    "rad": {
+                        "normfac": 105451000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 792238000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 28896700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16925200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 132611000000.0
+                    },
+                    "rad": {
+                        "normfac": 105451000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 792238000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "470": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 17688100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23455400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 111542000000.0
+                    },
+                    "rad": {
+                        "normfac": 99120200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 723704000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 17688100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23166300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 111542000000.0
+                    },
+                    "rad": {
+                        "normfac": 99120200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 723704000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "480": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 16074000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 11519300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 88227100000.0
+                    },
+                    "rad": {
+                        "normfac": 95091000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 674366000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 16074000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 11505600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 88227100000.0
+                    },
+                    "rad": {
+                        "normfac": 95091000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 674366000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "50": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "500": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 38846900.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 32777500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 113136000000.0
+                    },
+                    "rad": {
+                        "normfac": 81451000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 800172000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 38846900.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 32404000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 113136000000.0
+                    },
+                    "rad": {
+                        "normfac": 81451000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 800172000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 35165500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97724200000.0
+                    },
+                    "rad": {
+                        "normfac": 70968100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 680931000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 104309000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28774600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97724200000.0
+                    },
+                    "rad": {
+                        "normfac": 70968100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 730489000.0
+                }
+            }
+        }
+    },
+    "510": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 28400900.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 21249200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 111805000000.0
+                    },
+                    "rad": {
+                        "normfac": 84312200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 843373000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 28400900.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 21232300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 111805000000.0
+                    },
+                    "rad": {
+                        "normfac": 84312200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 843373000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 24907200.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 96227500000.0
+                    },
+                    "rad": {
+                        "normfac": 73427700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 741203000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 74456600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18543200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 96227500000.0
+                    },
+                    "rad": {
+                        "normfac": 73427700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 761837000.0
+                }
+            }
+        }
+    },
+    "520": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23484300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 19045000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97160000000.0
+                    },
+                    "rad": {
+                        "normfac": 83336500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 817197000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 23484300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18951400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97160000000.0
+                    },
+                    "rad": {
+                        "normfac": 83336500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 817197000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21112500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 83981800000.0
+                    },
+                    "rad": {
+                        "normfac": 72778500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 710575000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 61948000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16606700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 83981800000.0
+                    },
+                    "rad": {
+                        "normfac": 72778500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 762181000.0
+                }
+            }
+        }
+    },
+    "530": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 41453500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 29054200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 128956000000.0
+                    },
+                    "rad": {
+                        "normfac": 94748600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 833850000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 41453500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 29228100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 128956000000.0
+                    },
+                    "rad": {
+                        "normfac": 94748600000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 833850000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "540": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 26600600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18168300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 121268000000.0
+                    },
+                    "rad": {
+                        "normfac": 95299300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 859252000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 26600600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18120400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 121268000000.0
+                    },
+                    "rad": {
+                        "normfac": 95299300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 859252000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "550": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 22024400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18438300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101077000000.0
+                    },
+                    "rad": {
+                        "normfac": 92471500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 819137000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 22024400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18555800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101077000000.0
+                    },
+                    "rad": {
+                        "normfac": 92471500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 819137000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "560": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "570": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "580": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "590": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 56321400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 74453900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 89805700000.0
+                    },
+                    "rad": {
+                        "normfac": 61472800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 391995000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 56321400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 74635500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 89805700000.0
+                    },
+                    "rad": {
+                        "normfac": 61472800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 391995000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 50544300.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 77656800000.0
+                    },
+                    "rad": {
+                        "normfac": 53545500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 335427000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 168914000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 66129000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 77656800000.0
+                    },
+                    "rad": {
+                        "normfac": 53545500000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 369206000.0
+                }
+            }
+        }
+    },
+    "60": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "600": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 42784200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26507500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 152036000000.0
+                    },
+                    "rad": {
+                        "normfac": 118312000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 790867000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 42784200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27192300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 152036000000.0
+                    },
+                    "rad": {
+                        "normfac": 118312000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 790867000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 37547400.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 131645000000.0
+                    },
+                    "rad": {
+                        "normfac": 102965000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 690009000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 125369000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 22632900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 131645000000.0
+                    },
+                    "rad": {
+                        "normfac": 102965000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 734635000.0
+                }
+            }
+        }
+    },
+    "610": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 41861200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27590900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 150379000000.0
+                    },
+                    "rad": {
+                        "normfac": 116128000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 757213000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 41861200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28056300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 150379000000.0
+                    },
+                    "rad": {
+                        "normfac": 116128000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 757213000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 37009200.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 130359000000.0
+                    },
+                    "rad": {
+                        "normfac": 101159000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 666295000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 128469000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23582600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 130359000000.0
+                    },
+                    "rad": {
+                        "normfac": 101159000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 707685000.0
+                }
+            }
+        }
+    },
+    "620": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 42422000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 30125300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 147039000000.0
+                    },
+                    "rad": {
+                        "normfac": 111962000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 715861000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 42422000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 30377800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 147039000000.0
+                    },
+                    "rad": {
+                        "normfac": 111962000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 715861000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 37889600.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 127822000000.0
+                    },
+                    "rad": {
+                        "normfac": 97517100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 622123000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 134744000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25913900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 127822000000.0
+                    },
+                    "rad": {
+                        "normfac": 97517100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 663517000.0
+                }
+            }
+        }
+    },
+    "630": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 45690800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28053200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 151690000000.0
+                    },
+                    "rad": {
+                        "normfac": 118660000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 785694000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 45690800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28154300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 151690000000.0
+                    },
+                    "rad": {
+                        "normfac": 118660000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 785694000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 40115400.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 131823000000.0
+                    },
+                    "rad": {
+                        "normfac": 103337000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 684187000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 129879000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23290400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 131823000000.0
+                    },
+                    "rad": {
+                        "normfac": 103337000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 729794000.0
+                }
+            }
+        }
+    },
+    "640": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 51710600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 31209800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 149900000000.0
+                    },
+                    "rad": {
+                        "normfac": 117112000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 758695000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 51710600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 31323200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 149900000000.0
+                    },
+                    "rad": {
+                        "normfac": 117112000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 758695000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 45443500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 129643000000.0
+                    },
+                    "rad": {
+                        "normfac": 101778000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 662677000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 140541000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26052300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 129643000000.0
+                    },
+                    "rad": {
+                        "normfac": 101778000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 699650000.0
+                }
+            }
+        }
+    },
+    "650": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 43586100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 33550700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 141822000000.0
+                    },
+                    "rad": {
+                        "normfac": 106428000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 650935000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 43586100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 33568300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 141822000000.0
+                    },
+                    "rad": {
+                        "normfac": 106428000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 650935000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 39125500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 123103000000.0
+                    },
+                    "rad": {
+                        "normfac": 92350100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 570175000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 142717000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28888700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 123103000000.0
+                    },
+                    "rad": {
+                        "normfac": 92350100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 602982000.0
+                }
+            }
+        }
+    },
+    "660": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 26599400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24295500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117932000000.0
+                    },
+                    "rad": {
+                        "normfac": 105186000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 610649000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 26599400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24172800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117932000000.0
+                    },
+                    "rad": {
+                        "normfac": 105186000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 610649000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 22777900.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102168000000.0
+                    },
+                    "rad": {
+                        "normfac": 91577800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 539385000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 87309400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20612300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102168000000.0
+                    },
+                    "rad": {
+                        "normfac": 91577800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 565348000.0
+                }
+            }
+        }
+    },
+    "670": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 25659100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23980400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118087000000.0
+                    },
+                    "rad": {
+                        "normfac": 108414000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 658874000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 25659100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23950800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118087000000.0
+                    },
+                    "rad": {
+                        "normfac": 108414000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 658874000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 22073100.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102500000000.0
+                    },
+                    "rad": {
+                        "normfac": 94458200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 577409000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 81520100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20776700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102500000000.0
+                    },
+                    "rad": {
+                        "normfac": 94458200000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 615698000.0
+                }
+            }
+        }
+    },
+    "680": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 25013700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24103900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118199000000.0
+                    },
+                    "rad": {
+                        "normfac": 110713000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 695182000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 25013700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23928300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118199000000.0
+                    },
+                    "rad": {
+                        "normfac": 110713000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 695182000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21683900.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102650000000.0
+                    },
+                    "rad": {
+                        "normfac": 96347900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 602177000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 76747200.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 21432800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102650000000.0
+                    },
+                    "rad": {
+                        "normfac": 96347900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 640820000.0
+                }
+            }
+        }
+    },
+    "690": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23994000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25321600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117961000000.0
+                    },
+                    "rad": {
+                        "normfac": 111216000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 715712000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 23994000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 25240600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117961000000.0
+                    },
+                    "rad": {
+                        "normfac": 111216000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 715712000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21247700.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102648000000.0
+                    },
+                    "rad": {
+                        "normfac": 97100100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 613040000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 70117400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 22416300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102648000000.0
+                    },
+                    "rad": {
+                        "normfac": 97100100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 666244000.0
+                }
+            }
+        }
+    },
+    "70": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 49309000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 34400900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 162168000000.0
+                    },
+                    "rad": {
+                        "normfac": 128673000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 655401000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 49309000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 34515000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 162168000000.0
+                    },
+                    "rad": {
+                        "normfac": 128673000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 655401000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 42360500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 140353000000.0
+                    },
+                    "rad": {
+                        "normfac": 112075000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 567831000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 155638000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 29185900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 140353000000.0
+                    },
+                    "rad": {
+                        "normfac": 112075000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 606649000.0
+                }
+            }
+        }
+    },
+    "700": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21934600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 27734900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118190000000.0
+                    },
+                    "rad": {
+                        "normfac": 110322000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 722679000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 21934600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28036600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118190000000.0
+                    },
+                    "rad": {
+                        "normfac": 110322000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 722679000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 19062700.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102471000000.0
+                    },
+                    "rad": {
+                        "normfac": 96224900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 621616000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 61946800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24657400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102471000000.0
+                    },
+                    "rad": {
+                        "normfac": 96224900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 665560000.0
+                }
+            }
+        }
+    },
+    "710": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 16664900.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102639000000.0
+                    },
+                    "rad": {
+                        "normfac": 94181100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 613717000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 53570600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26485000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102639000000.0
+                    },
+                    "rad": {
+                        "normfac": 94181100000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 650731000.0
+                }
+            }
+        }
+    },
+    "720": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 20081300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 22435300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118127000000.0
+                    },
+                    "rad": {
+                        "normfac": 106427000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 687966000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 20081300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 22256200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 118127000000.0
+                    },
+                    "rad": {
+                        "normfac": 106427000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 687966000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 16241900.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102380000000.0
+                    },
+                    "rad": {
+                        "normfac": 92747400000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 586331000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 51757500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20039500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102380000000.0
+                    },
+                    "rad": {
+                        "normfac": 92747400000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 631029000.0
+                }
+            }
+        }
+    },
+    "730": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 22989400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15402500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117538000000.0
+                    },
+                    "rad": {
+                        "normfac": 105348000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 635382000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 22989400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15363900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117538000000.0
+                    },
+                    "rad": {
+                        "normfac": 105348000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 635382000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 18463500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102195000000.0
+                    },
+                    "rad": {
+                        "normfac": 91669000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 555545000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 56911700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 12143100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102195000000.0
+                    },
+                    "rad": {
+                        "normfac": 91669000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 585173000.0
+                }
+            }
+        }
+    },
+    "740": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 28521700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15853200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117900000000.0
+                    },
+                    "rad": {
+                        "normfac": 102770000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 586138000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 28521700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16036900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117900000000.0
+                    },
+                    "rad": {
+                        "normfac": 102770000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 586138000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23166700.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102253000000.0
+                    },
+                    "rad": {
+                        "normfac": 89706400000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 514859000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 69575900.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 12651000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 102253000000.0
+                    },
+                    "rad": {
+                        "normfac": 89706400000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 538511000.0
+                }
+            }
+        }
+    },
+    "750": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 38924300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20390600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 116797000000.0
+                    },
+                    "rad": {
+                        "normfac": 99093300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 519570000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 38924300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20326200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 116797000000.0
+                    },
+                    "rad": {
+                        "normfac": 99093300000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 519570000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 32454100.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101269000000.0
+                    },
+                    "rad": {
+                        "normfac": 86797800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 454424000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 89405400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 15466800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101269000000.0
+                    },
+                    "rad": {
+                        "normfac": 86797800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 463448000.0
+                }
+            }
+        }
+    },
+    "760": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 51794300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 30152100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 112941000000.0
+                    },
+                    "rad": {
+                        "normfac": 93314800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 433354000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 51794300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 29818100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 112941000000.0
+                    },
+                    "rad": {
+                        "normfac": 93314800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 433354000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 45687700.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97551000000.0
+                    },
+                    "rad": {
+                        "normfac": 81419700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 377326000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 114596000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 22561000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 97551000000.0
+                    },
+                    "rad": {
+                        "normfac": 81419700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 384129000.0
+                }
+            }
+        }
+    },
+    "770": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 27425100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24508000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117490000000.0
+                    },
+                    "rad": {
+                        "normfac": 100730000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 559122000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 27425100.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24380800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 117490000000.0
+                    },
+                    "rad": {
+                        "normfac": 100730000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 559122000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23669900.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101665000000.0
+                    },
+                    "rad": {
+                        "normfac": 87917700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 481749000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 91322600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 21422700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101665000000.0
+                    },
+                    "rad": {
+                        "normfac": 87917700000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 522292000.0
+                }
+            }
+        }
+    },
+    "780": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "790": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "80": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 24732600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18817100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 146557000000.0
+                    },
+                    "rad": {
+                        "normfac": 128357000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 636463000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 24732600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 18654900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 146557000000.0
+                    },
+                    "rad": {
+                        "normfac": 128357000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 636463000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21219500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 126894000000.0
+                    },
+                    "rad": {
+                        "normfac": 111748000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 554033000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 81623400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 16200300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 126894000000.0
+                    },
+                    "rad": {
+                        "normfac": 111748000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 590135000.0
+                }
+            }
+        }
+    },
+    "800": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "810": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "820": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "830": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "840": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "850": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 26427700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26078800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 116910000000.0
+                    },
+                    "rad": {
+                        "normfac": 113949000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 470973000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 26427700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 26046700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 116910000000.0
+                    },
+                    "rad": {
+                        "normfac": 113949000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 470973000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 22727600.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101266000000.0
+                    },
+                    "rad": {
+                        "normfac": 99316800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 417294000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 105104000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 22548300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 101266000000.0
+                    },
+                    "rad": {
+                        "normfac": 99316800000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 442976000.0
+                }
+            }
+        }
+    },
+    "860": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 22254300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20353700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98847900000.0
+                    },
+                    "rad": {
+                        "normfac": 115694000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 481512000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 22254300.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20467300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98847900000.0
+                    },
+                    "rad": {
+                        "normfac": 115694000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 481512000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 19317900.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85615300000.0
+                    },
+                    "rad": {
+                        "normfac": 101369000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 412834000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 63943000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 17732400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85615300000.0
+                    },
+                    "rad": {
+                        "normfac": 101369000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 440784000.0
+                }
+            }
+        }
+    },
+    "870": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 22916600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 19970200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98773900000.0
+                    },
+                    "rad": {
+                        "normfac": 118162000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 504540000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 22916600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20015100.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98773900000.0
+                    },
+                    "rad": {
+                        "normfac": 118162000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 504540000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 20138500.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85744200000.0
+                    },
+                    "rad": {
+                        "normfac": 102985000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 434373000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 66371600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 17217200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85744200000.0
+                    },
+                    "rad": {
+                        "normfac": 102985000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 458009000.0
+                }
+            }
+        }
+    },
+    "880": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23894400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20519800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98826300000.0
+                    },
+                    "rad": {
+                        "normfac": 119636000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 517126000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 23894400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20558700.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98826300000.0
+                    },
+                    "rad": {
+                        "normfac": 119636000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 517126000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21046000.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85625000000.0
+                    },
+                    "rad": {
+                        "normfac": 104424000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 451311000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 67543400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 17451000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85625000000.0
+                    },
+                    "rad": {
+                        "normfac": 104424000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 468375000.0
+                }
+            }
+        }
+    },
+    "890": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 23384500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24035800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98875800000.0
+                    },
+                    "rad": {
+                        "normfac": 119238000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 517632000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 23384500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 23864400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 98875800000.0
+                    },
+                    "rad": {
+                        "normfac": 119238000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 517632000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21241800.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85714100000.0
+                    },
+                    "rad": {
+                        "normfac": 103732000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 462405000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 64089700.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 20713600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 85714100000.0
+                    },
+                    "rad": {
+                        "normfac": 103732000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 474060000.0
+                }
+            }
+        }
+    },
+    "90": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 21738000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28035900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 121156000000.0
+                    },
+                    "rad": {
+                        "normfac": 121469000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 584744000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 21738000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 28168800.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 121156000000.0
+                    },
+                    "rad": {
+                        "normfac": 121469000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 584744000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 18677400.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 104984000000.0
+                    },
+                    "rad": {
+                        "normfac": 105631000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 503457000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 69471000.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 24423500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 104984000000.0
+                    },
+                    "rad": {
+                        "normfac": 105631000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 537651000.0
+                }
+            }
+        }
+    },
+    "900": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 16621800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 12263000.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90975600000.0
+                    },
+                    "rad": {
+                        "normfac": 100061000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 611499000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 16621800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 12454400.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90975600000.0
+                    },
+                    "rad": {
+                        "normfac": 100061000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 611499000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 14059800.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78880600000.0
+                    },
+                    "rad": {
+                        "normfac": 87368900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 530580000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 51364400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 10605600.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78880600000.0
+                    },
+                    "rad": {
+                        "normfac": 87368900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 576765000.0
+                }
+            }
+        }
+    },
+    "910": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 16488400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 11208200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90882400000.0
+                    },
+                    "rad": {
+                        "normfac": 102201000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 653607000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 16488400.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 11100300.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90882400000.0
+                    },
+                    "rad": {
+                        "normfac": 102201000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 653607000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 14033700.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78925900000.0
+                    },
+                    "rad": {
+                        "normfac": 89276900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 561916000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 48038600.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 9467500.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78925900000.0
+                    },
+                    "rad": {
+                        "normfac": 89276900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 612344000.0
+                }
+            }
+        }
+    },
+    "920": {
+        "D2": {
+            "neg": null,
+            "pos": null
+        },
+        "H2": {
+            "neg": null,
+            "pos": null
+        }
+    },
+    "930": {
+        "D2": {
+            "neg": {
+                "delta": {
+                    "normfac": 17574800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 10925900.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90728700000.0
+                    },
+                    "rad": {
+                        "normfac": 102684000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 665375000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 17574800.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 10936200.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 90728700000.0
+                    },
+                    "rad": {
+                        "normfac": 102684000000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 665375000.0
+                }
+            }
+        },
+        "H2": {
+            "neg": {
+                "delta": {
+                    "normfac": 15031200.0
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78958100000.0
+                    },
+                    "rad": {
+                        "normfac": 89622900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 572611000.0
+                }
+            },
+            "pos": {
+                "delta": {
+                    "normfac": 47786500.0
+                },
+                "exc": {
+                    "rad": {
+                        "normfac": 9236860.0
+                    }
+                },
+                "inc": {
+                    "norad": {
+                        "normfac": 78958100000.0
+                    },
+                    "rad": {
+                        "normfac": 89622900000.0
+                    }
+                },
+                "rho": {
+                    "normfac": 610264000.0
+                }
+            }
+        }
+    }
+}
