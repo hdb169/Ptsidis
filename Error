@@ -1,0 +1,16 @@
+E = (A-B)/ (C-D)
+"Brute Force Method"
+error in all four terms
+E1 = (A + delta A -B)/ (C-D)
+E2 = (A - B -delta B)/ (C-D)
+E3 = (A -B) / (C + delta C -D)
+E4 = (A -B ) / (C -D -delta D)
+
+Total Error in Eis delta E,
+delta E = sqrt[(E-E1)^2 + (E-E2)^2 + (E-E3)^2 + (E-E4)^2]
+
+check it and see the differences:
+
+Now what are delta A, delta B , delta C, and delta D?
+=================
+Here 
