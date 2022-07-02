@@ -1,0 +1,96 @@
+//#define nruns 3
+void zbins_NEW(){
+  gStyle->SetOptStat(1000011);
+  gStyle->SetOptStat(1111111);
+  gROOT->SetBatch("kTRUE");
+gStyle->SetPalette(1,0);
+// gStyle->SetOptStat(1000011);
+ gStyle->SetOptFit(11);
+ gStyle->SetTitleOffset(1.,"Y");
+ gStyle->SetTitleOffset(.7,"X");
+ gStyle->SetLabelSize(0.08,"XY");
+ gStyle->SetLabelSize(0.08);
+ gStyle->SetTitleSize(0.08,"XY");
+ gStyle->SetPadLeftMargin(0.12);
+const int runs[]={110, 120};
+ const double normfac[]={ 119135000000.0, 118319000000.0};
+ const double gevents[] = { 300000.0,300000.0 };
+
+ //const int runs[]={100, 110, 120};
+ //const double normfac[]={83328600000.0, 119135000000.0, 118319000000.0};
+ //const double gevents[] = {300000.0, 300000.0,300000.0 };
+  const double zval[]={0.05 ,0.1, 0.15, 0.2, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.0};
+  const int numRuns = sizeof(runs)/sizeof(*runs);
+
+
+  for (int r =0;r<numRuns;r++){
+  	
+    double Emiss1,Weight1,normwt, spdelta1,z1,sighad1,hsdelta1;
+    TH1F * histz[20];
+    TH1F * sigz[20];
+
+
+    for(int i=0;i<20;i++){
+      histz[i]= new TH1F(Form("histz[%d]",i),"",20,0,1);
+      sigz[i]= new TH1F(Form("sigz[%d]",i),"",20,0,0.45);
+
+      
+    }
+    TString filename  = Form("/home/hdbhatt/Desktop/ROOTfiles/csv_%d_H2_pos_inc_norad.root",runs[r]);
+    TFile *f = new TFile(filename, "READ");
+    cout<< "Opening Run Num = "<<filename<<"\t"<< runs[r] <<endl;
+    if(f->IsZombie()){
+      std::cout << "Error opening file "<< std::endl;
+      continue;
+    }
+    TTree * tt = (TTree *)f->Get("h10");
+    Long64_t nentriesD = tt->GetEntries();
+
+    for (int kk=0; kk<nentriesD;  kk++){
+      tt->GetEntry(kk);
+
+      Emiss1 = tt->GetLeaf("Em")->GetValue();
+      Weight1 = tt->GetLeaf("Weight")->GetValue();
+      spdelta1 = tt->GetLeaf("ssdelta")->GetValue();
+      hsdelta1 = tt->GetLeaf("hsdelta")->GetValue();
+      z1 = tt->GetLeaf("z")->GetValue();
+      sighad1 = tt->GetLeaf("sighad")->GetValue();
+      normwt = Weight1*normfac[r]/gevents[r];
+    
+      
+      for(int i=0;i<20;i++){
+	if(z1 > (0.05*i)  &&  (z1<=0.05+0.05*i)){
+	  if(spdelta1>-10&&spdelta1<20 &&hsdelta1>-8&&hsdelta1<8){
+	    sigz[i]->Fill(sighad1);
+	    histz[i]->Fill(z1);
+
+	  }//cut
+	}
+      }
+    }
+
+    for(int i = 0;i<20;i++){
+      cout<<setprecision(3)<<fixed<<(i+1)*0.05<< "  "<<(histz[i]->GetBinCenter(i))+0.05<<"   "<<sigz[i]->GetMean()<<endl;
+
+      //Bin Center makes wrong CS
+      //cout<<(i+1)*0.05<< "  "<<sigz[i]->GetBinCenter(i)<<endl;
+
+
+    }
+
+      
+    
+    TCanvas *c1 = new TCanvas("c1","c1", 1200, 800);
+    c1->Divide(4,5);
+    for(int i = 1;i<21;i++){
+      c1->cd(i);//gPad->SetGrid();
+      sigz[i]->Draw("hist");
+      sigz[i]->SetTitle(Form("SIGHAD: z=> (%.5f - %.5f)",0.05*i-0.05, 0.05*i ));//make same as cuts above
+      sigz[i]->SetLineWidth(2);
+      
+    }
+
+    c1->SaveAs(Form("plots/zplots_%d.pdf",runs[r]));
+	
+    }
+  }
