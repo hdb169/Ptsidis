@@ -1,41 +1,64 @@
 //#define nruns 3
-void zbins_NEW(){
+void zbins_NEW_20hist(){
   gStyle->SetOptStat(1000011);
   gStyle->SetOptStat(1111111);
-  gROOT->SetBatch("kTRUE");
-gStyle->SetPalette(1,0);
-// gStyle->SetOptStat(1000011);
- gStyle->SetOptFit(11);
- gStyle->SetTitleOffset(1.,"Y");
- gStyle->SetTitleOffset(.7,"X");
- gStyle->SetLabelSize(0.08,"XY");
- gStyle->SetLabelSize(0.08);
- gStyle->SetTitleSize(0.08,"XY");
- gStyle->SetPadLeftMargin(0.12);
-const int runs[]={110, 120};
- const double normfac[]={ 119135000000.0, 118319000000.0};
- const double gevents[] = { 300000.0,300000.0 };
+  //  gROOT->SetBatch("kTRUE");
+  gStyle->SetPalette(1,0);
+  // gStyle->SetOptStat(1000011);
+  gStyle->SetOptFit(11);
+  gStyle->SetTitleOffset(1.,"Y");
+  gStyle->SetTitleOffset(.7,"X");
+  gStyle->SetLabelSize(0.08,"XY");
+  gStyle->SetLabelSize(0.08);
+  gStyle->SetTitleSize(0.08,"XY");
+  gStyle->SetPadLeftMargin(0.12);
 
- //const int runs[]={100, 110, 120};
- //const double normfac[]={83328600000.0, 119135000000.0, 118319000000.0};
- //const double gevents[] = {300000.0, 300000.0,300000.0 };
-  const double zval[]={0.05 ,0.1, 0.15, 0.2, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.0};
+  const int runs[]={70,80,90,100};
+
+  //70 H2+ no rad 140353000000.0
+  //80 H2+ no rad 126894000000.0
+  //90 H2+ no rad 104984000000.0
+  //100 H2+ no rad 83328600000.0
+
+ 
+  const double normfac[]={140353000000.0, 126894000000.0,  104984000000.0, 83328600000.0 };
+  const double gevents[] = { 300000.0, 300000.0 , 300000.0, 300000.0}; 
+  // ofstream txtsimccs("textfiles/crosssection.txt",ios::app);
+  ofstream txtsimccs("textfiles/crosssection.txt");
+
+  // const int runs[]={100, 110, 120};
+  //const double normfac[]={83328600000.0, 119135000000.0, 118319000000.0};
+  // const double gevents[] = {300000.0, 300000.0,300000.0 };
+  //  const double zval[]={0.05 ,0.1, 0.15, 0.2, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.0};
   const int numRuns = sizeof(runs)/sizeof(*runs);
-
+ 
 
   for (int r =0;r<numRuns;r++){
   	
-    double Emiss1,Weight1,normwt, spdelta1,z1,sighad1,hsdelta1;
+    double Emiss1,Weight1,normwt, spdelta1,z1,sighad1,hsdelta1,theta,mom,ptsquare,pt2calc,ptcalc;
+    double nu,q,pm,hxptar,hyptar,pxptar,pyptar,mx2,xbj,w,w2,pt;
     TH1F * histz[20];
     TH1F * sigz[20];
+    TH1F * hpt[20];
+    TH1F * hpt2[20];
+    TH1F * hpt2calc[20];
+    Double_t pionmass   = 0.1395701835;    //Gev/c^2 
+    Double_t protonmass = 0.93827231;//GeV/c2
 
 
     for(int i=0;i<20;i++){
       histz[i]= new TH1F(Form("histz[%d]",i),"",20,0,1);
-      sigz[i]= new TH1F(Form("sigz[%d]",i),"",20,0,0.45);
+      sigz[i]= new TH1F(Form("sigz[%d]",i),"",20,0,1.2);
+      hpt[i]= new TH1F(Form("hpt[%d]",i),"",20,0,0.4);
+      hpt2[i]= new TH1F(Form("hpt2[%d]",i),"",20,0,0.4);
+      hpt2calc[i]= new TH1F(Form("hpt2calc[%d]",i),"",20,0,0.4);
 
-      
     }
+    TH1F *pt2test = new TH1F("pt2test","pt2test",20,0,0.4);
+    TH1F *pt2default = new TH1F("pt2","pt2 (GeV2);Counts; Pt2 Hist",20,0,0.4);
+    TH1F *histpt = new TH1F("histpt","pt (GeV);Counts; Pt Hist",20,0,0.4);
+
+    
     TString filename  = Form("/home/hdbhatt/Desktop/ROOTfiles/csv_%d_H2_pos_inc_norad.root",runs[r]);
     TFile *f = new TFile(filename, "READ");
     cout<< "Opening Run Num = "<<filename<<"\t"<< runs[r] <<endl;
@@ -55,42 +78,144 @@ const int runs[]={110, 120};
       hsdelta1 = tt->GetLeaf("hsdelta")->GetValue();
       z1 = tt->GetLeaf("z")->GetValue();
       sighad1 = tt->GetLeaf("sighad")->GetValue();
+      theta = tt->GetLeaf("thetapq")->GetValue();
+      mom = tt->GetLeaf("ppi")->GetValue();
+      ptsquare = tt->GetLeaf("pt2")->GetValue();
+      nu = tt->GetLeaf("nu")->GetValue();
+      q = tt->GetLeaf("q")->GetValue();
+      pm= tt->GetLeaf("Pm")->GetValue();
+      hxptar=tt->GetLeaf("hsxptar")->GetValue();
+      hyptar=tt->GetLeaf("hsyptar")->GetValue();
+      pxptar=tt->GetLeaf("ssxptar")->GetValue();
+      pyptar=tt->GetLeaf("ssyptar")->GetValue();
+      xbj = tt->GetLeaf("xbj")->GetValue();
+      w = tt->GetLeaf("W")->GetValue();
+      mx2 = (protonmass + nu - z1*nu) * (protonmass + nu - z1*nu) - abs(pm)*abs(pm);
+      w2=w*w;
+      ptcalc=mom*sin(theta);//noneed
+      pt2calc=ptcalc*ptcalc;//noneed
       normwt = Weight1*normfac[r]/gevents[r];
-    
-      
-      for(int i=0;i<20;i++){
-	if(z1 > (0.05*i)  &&  (z1<=0.05+0.05*i)){
-	  if(spdelta1>-10&&spdelta1<20 &&hsdelta1>-8&&hsdelta1<8){
-	    sigz[i]->Fill(sighad1);
-	    histz[i]->Fill(z1);
+      pt=sqrt(ptsquare);
 
+      if(spdelta1>-10&&spdelta1<20 &&hsdelta1>-8&&hsdelta1<8 && w2 > 4 && mx2 > 2.8 && hxptar>-0.08 && hxptar<0.08&&hyptar>-0.04&&hyptar<0.04  && pxptar>-0.05&&pxptar<0.05&&pyptar>-0.04&&pyptar<0.04 ){
+	
+	pt2default->Fill(ptsquare,normwt);
+	pt2test->Fill(pt2calc,normwt);
+	histpt->Fill(pt,normwt);
+      
+	double sum[20] ={0};
+	double  den[20]={0};
+	double ratio[20]={0};
+	//
+	for(int i=0;i<20;i++){
+	  if(z1 > (0.05*i)  &&  (z1<=0.05+0.05*i)){
+	
+	    //sigz[i]->Fill(sighad1,normwt);
+	    // histz[i]->Fill(z1,normwt);
+	    sigz[i]->Fill(sighad1,normwt);
+	    histz[i]->Fill(z1,normwt);
+	    hpt2[i]->Fill(ptsquare,normwt);
+	    hpt2calc[i]->Fill(pt2calc,normwt);
+	    hpt2[i]->Fill(ptsquare,normwt);
+	    hpt[i]->Fill(pt,normwt);
+
+	    //new
+	    //sum[i]+=sighad1*normwt;
+	    // den[i]+=normwt;
+	    //ratio[i]=sum[i]/den[i];
+	     
 	  }//cut
-	}
+	}//zbins
+      }//pid
+    }//entries
+
+    for(int i = 0;i<20;i++){
+      if(sigz[i]->GetMean()!=0){
+	//ori	txtsimccs<<"H2+"<<"  "<<runs[r]<<"  "<<setprecision(3)<<fixed<<(i+1)*0.05<< "  "<<(histz[i]->GetBinCenter(i))+0.05<<"   "<<sigz[i]->GetMean()<<endl;
+	//MeanErr	txtsimccs<<"H2+"<<"  "<<runs[r]<<"  "<<setprecision(3)<<fixed<<(i)*0.05<< "  "<<(histz[i]->GetBinCenter(i))<<"   "<<sigz[i]->GetMean()<<"  "<<sigz[i]->GetMeanError()<<endl;
+
+	txtsimccs<<"H2+"<<"  "<<runs[r]<<"  "<<setprecision(3)<<fixed<<(i)*0.05<< "  "<<(histz[i]->GetBinCenter(i))<<"   "<<sigz[i]->GetMean()<<"  "<<hpt[i]->GetMean()<<"  "<<hpt2[i]->GetMean()<<endl;
+
+	
       }
     }
 
-    for(int i = 0;i<20;i++){
-      cout<<setprecision(3)<<fixed<<(i+1)*0.05<< "  "<<(histz[i]->GetBinCenter(i))+0.05<<"   "<<sigz[i]->GetMean()<<endl;
-
-      //Bin Center makes wrong CS
-      //cout<<(i+1)*0.05<< "  "<<sigz[i]->GetBinCenter(i)<<endl;
-
-
-    }
-
-      
+   
+  
     
     TCanvas *c1 = new TCanvas("c1","c1", 1200, 800);
     c1->Divide(4,5);
     for(int i = 1;i<21;i++){
       c1->cd(i);//gPad->SetGrid();
       sigz[i]->Draw("hist");
+      //	sigz[i]->SetTitle(Form("SIGHAD For Z bins z=> (%.5f - %.5f)",0.05*i-0.05, 0.05+0.05*i ));//make same as cuts above
       sigz[i]->SetTitle(Form("SIGHAD: z=> (%.5f - %.5f)",0.05*i-0.05, 0.05*i ));//make same as cuts above
       sigz[i]->SetLineWidth(2);
+      //histz[i]->Write();
+      //  cout<< runs[r]<<"   "<< " Ent = "<<histz[i]->GetEntries()<<"   "<<"Int = "<<histz[i]->Integral()<<endl;
+    }
+
+    c1->SaveAs(Form("plots/zplots_weighted_%d.pdf",runs[r]));
+
+
+ 
+    TCanvas *c2 = new TCanvas("c2","c2", 1200, 800);
+    c2->Divide(4,5);
+    for(int i = 1;i<21;i++){
+      c2->cd(i);
+      hpt2[i]->Draw("hist");
+      hpt2[i]->SetTitle(Form("Pt2: z=> (%.5f - %.5f)",0.05*i-0.05, 0.05*i ));//make same as cuts above
+      hpt2[i]->SetLineWidth(2);
       
     }
 
-    c1->SaveAs(Form("plots/zplots_%d.pdf",runs[r]));
-	
+    c2->SaveAs(Form("plots/ptplots_weighted_%d.pdf",runs[r]));
+
+    
+    TCanvas *c3 = new TCanvas("c3","c3", 1200, 800);
+    c3->Divide(4,5);
+    for(int i = 1;i<21;i++){
+      c3->cd(i);
+      hpt[i]->Draw("hist");
+      hpt[i]->SetTitle(Form("Pt: z=> (%.5f - %.5f)",0.05*i-0.05, 0.05*i ));//make same as cuts above
+      hpt[i]->SetLineWidth(2);
+      
     }
+
+    c3->SaveAs(Form("plots/ptplots_weighted_%d.pdf",runs[r]));
+
+    
+
+    TCanvas *c4 = new TCanvas("c4","c4", 1200, 800);
+    c4->Divide(2,2);
+    c4->cd(1);
+    histpt->Draw("hist");
+   
+    c4->cd(2);
+    pt2default->Draw("hist");
+    c4->SaveAs(Form("plots/ptplots_%d.pdf",runs[r]));
+
+    
   }
+}
+
+
+
+
+
+
+
+
+
+//normwt = Weight*normfac/gevents;
+
+
+//normwt_sig =  Weight*normfac*sighad/gevents;
+
+
+//zhist1->Fill(z,normwt);
+
+//zhist2->Fill(z,normwt_sig);
+
+
+//Model_cross_sec = zhist2/zhist1;
