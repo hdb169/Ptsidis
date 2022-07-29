@@ -1,3 +1,5 @@
+To check at local computer: Full working code is ptsidis_skim_coutRootfile_geom_cuts.cxx
+
 #define NRUNS 1//2
 void cuts_study(){
 
