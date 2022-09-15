@@ -1,0 +1,316 @@
+//#define nruns 3
+void hemsimc_nocuts(){
+  gStyle->SetOptStat(1000011);
+  gStyle->SetOptStat(1111111);
+  //  gROOT->SetBatch("kTRUE");
+  gStyle->SetPalette(1,0);
+  // gStyle->SetOptStat(1000011);
+  gStyle->SetOptFit(11);
+  gStyle->SetTitleOffset(0.7,"Y");
+  gStyle->SetTitleOffset(0.7,"X");
+  gStyle->SetLabelSize(0.06,"XY");
+  gStyle->SetLabelSize(0.06);
+  gStyle->SetTitleSize(0.06,"XY");
+  gStyle->SetPadLeftMargin(0.09);
+
+ 
+
+  const int runs[]= {6049, 6043, 6029, 6020,  
+		     6185, 6179, 6170, 6145,  
+		     6215, 6205, 6198, 6194,   
+		     6340, 6324, 6322, 6309,  
+		     7783, 7775, 7768};
+ 
+
+  const int numRuns = sizeof(runs)/sizeof(*runs);
+ 
+
+  for (int r =0;r<numRuns;r++){
+
+
+    ifstream infile(Form("/lustre19/expphy/volatile/hallc/c-csv/hdbhatt/simcjuly22/outfiles2sameMatrices/simc_%d_pi_rad.hist",runs[r]));
+    if(!infile){
+      cout<<"Input file doesn't exist!"<<endl;
+      exit(0);
+    }
+
+
+
+    TString tmp, content, text;
+
+    Ssiz_t from=0;
+    double normfac_value;
+
+    while(tmp.ReadLine(infile)){
+      if(tmp.Contains("normfac")){
+	tmp.Tokenize(content,from,"=");
+	text=atof(content.Data());
+	tmp.Tokenize(content,from,"=");
+	normfac_value=atof(content.Data());
+	from=0;
+      }
+    }
+    infile.close();
+
+    //cout<<runs[r]<<"\t\t"<<normfac_value<<endl;
+
+    const double normfac[]={normfac_value};
+  
+  
+ 
+ 
+  	
+    double emiss,weight,normwt, spdelta,z,sighad,hsdelta,theta,mom,ptsquare,pt2calc,ptcalc;
+    double nu,q,pm,hxptar,hyptar,pxptar,pyptar,mx2,xbj,w,w2,pt,missmass,missmass2;
+   
+    Double_t pionmass   = 0.1395701835;    //Gev/c^2 
+    Double_t protonmass = 0.93827231;//GeV/c2
+
+
+    TH1F *hist_mom= new TH1F("hist_mom","SHMS Mom (SIMC);MOM;Yield",100,0,7);
+    TH1F *hist_pdelta= new TH1F("hist_pdelta","SHMS Delta (SIMC);PDelta;Yield",100,-100,100);
+    TH1F *hist_weight= new TH1F("hist_weight","weight (SIMC);weight;Counts",100,0.00, 50*10^(-9)); 
+    TH1F *hist_weightNorm= new TH1F("hist_weightNorm","weight (SIMC);weight;Yield",100,0.00, 50*10^(-9)); 
+    TH1F *hist_hdelta= new TH1F("hist_hdelta","HMS Delta (SIMC);HDelta;Yield",100,-100,100);
+    TH1F *hist_z= new TH1F("hist_z","Z (SIMC);Z;Yield",100,0,1);
+    TH1F *hist_x= new TH1F("hist_x","X (SIMC);X;Yield",100,0,1);
+    TH1F *hist_hxptar= new TH1F("hist_hxptar","HMS xptar (SIMC);xptar;Yield",100,-0.1,0.1);
+    TH1F *hist_hyptar= new TH1F("hist_hyptar","HMS yptar (SIMC);yptar;Yield",100,-0.06,0.06);
+    TH1F *hist_pxptar= new TH1F("hist_pxptar","SHMS xptar (SIMC);pxptar;Yield",100,-0.1,0.1);
+    TH1F *hist_pyptar= new TH1F("hist_pyptar","SHMS yptar (SIMC);pyptar;Yield",100,-0.06,0.06);
+    TH1F *hist_mx2= new TH1F("hist_mx2","Mx2 (SIMC);Mx2;Yield",100,0,10);
+    TH1F *hist_W2= new TH1F("hist_W2","W2 (SIMC);W2;Yield",100,0,10);
+    TH1F *hist_missmass2= new TH1F("hist_missmass2","Missmass2 (SIMC);Missmass2;Yield",100,0,10);
+
+
+    // TString filename  = Form("/lustre19/expphy/volatile/hallc/c-csv/hdbhatt/simcjuly22/worksimGeomOFF/csv_%d_D2_pos_inc_rad.root",runs[r]);
+    //TString filename  = Form("/lustre19/expphy/volatile/hallc/c-csv/hdbhatt/simcjuly22/worksim/csv_%d_D2_pos_inc_rad.root",runs[r]);
+
+    //peter 2 same matries
+        TString filename  = Form("/lustre19/expphy/volatile/hallc/c-csv/hdbhatt/simcjuly22/worksim2sameMatrices/simc_%d_pi_rad.root",runs[r]);
+
+    //TString filename  = Form("/lustre19/expphy/volatile/hallc/c-csv/hdbhatt/simcjuly22/worksim/simc_%d_pi_rad.root",runs[r]);
+    TFile *f = new TFile(filename, "READ");
+    // cout<< "Opening Run Num = "<<filename<<"\t"<< runs[r] <<endl;
+    if(f->IsZombie()){
+      std::cout << "Error opening file "<< std::endl;
+      continue;
+    }
+
+    TTree * tt = (TTree *)f->Get("h10");
+    // }
+
+    
+    Long64_t nentriesD = tt->GetEntries();
+    double rad_evts = nentriesD;
+
+    //cout<<"Total Evts Simulated = "<<rad_evts<<endl;
+
+    for (int kk=0; kk<nentriesD;  kk++){
+      tt->GetEntry(kk);
+
+      emiss = tt->GetLeaf("Em")->GetValue();
+      weight = tt->GetLeaf("Weight")->GetValue();
+      spdelta = tt->GetLeaf("ssdelta")->GetValue();
+      hsdelta = tt->GetLeaf("hsdelta")->GetValue();
+      z = tt->GetLeaf("z")->GetValue();
+      sighad = tt->GetLeaf("sighad")->GetValue();
+      theta = tt->GetLeaf("thetapq")->GetValue();
+      mom = tt->GetLeaf("ppi")->GetValue();
+      ptsquare = tt->GetLeaf("pt2")->GetValue();
+      nu = tt->GetLeaf("nu")->GetValue();
+      q = tt->GetLeaf("q")->GetValue();
+      pm= tt->GetLeaf("Pm")->GetValue();
+      hxptar=tt->GetLeaf("hsxptar")->GetValue();
+      hyptar=tt->GetLeaf("hsyptar")->GetValue();
+      pxptar=tt->GetLeaf("ssxptar")->GetValue();
+      pyptar=tt->GetLeaf("ssyptar")->GetValue();
+      xbj = tt->GetLeaf("xbj")->GetValue();
+      w = tt->GetLeaf("W")->GetValue();
+      missmass = tt->GetLeaf("missmass")->GetValue();
+
+
+      mx2 = (protonmass + nu - z*nu) * (protonmass + nu - z*nu) - abs(pm)*abs(pm);
+
+
+      w2=w*w;
+      missmass2=missmass*missmass;
+      ptcalc=mom*sin(theta);
+      pt2calc=ptcalc*ptcalc;
+      // normwt = weight*normfac[r]/rad_evts;//gevents[r];
+           normwt = weight*normfac_value/rad_evts;//gevents[r];
+ pt=sqrt(ptsquare);
+
+     
+      // if(spdelta>-10&&spdelta<20 &&hsdelta>-8&&hsdelta<8  && hxptar>-0.08 && hxptar<0.08&&hyptar>-0.04&&hyptar<0.04  && pxptar>-0.05&&pxptar<0.05&&pyptar>-0.04&&pyptar<0.04 ){
+      //// ){
+      //	
+
+      if(spdelta>-1000){
+	//if(spdelta>-10&&spdelta<20&&hsdelta>-8&&hsdelta<8){
+	//if(spdelta>-10&&spdelta<20&&hsdelta>-8&&hsdelta<8 && hxptar>-0.08 && hxptar<0.08&&hyptar>-0.04&&hyptar<0.04  && pxptar>-0.05&&pxptar<0.05&&pyptar>-0.04&&pyptar<0.04){
+	//if(spdelta>-10&&spdelta<20&&hsdelta>-8&&hsdelta<8 && hxptar>-0.08 && hxptar<0.08&&hyptar>-0.04&&hyptar<0.04  && pxptar>-0.05&&pxptar<0.05&&pyptar>-0.04&&pyptar<0.04 && w2 > 4 && mx2 > 2.6){
+
+	hist_pdelta->Fill(spdelta,normwt);
+	hist_weightNorm->Fill(weight,normwt);
+	hist_weight->Fill(weight);
+	hist_hdelta->Fill(hsdelta,normwt);
+	hist_z->Fill(z,normwt);
+	hist_x->Fill(xbj,normwt);
+	hist_hxptar->Fill(hxptar,normwt);
+	hist_hyptar->Fill(hyptar,normwt);
+	hist_pxptar->Fill(pxptar,normwt);
+	hist_pyptar->Fill(pyptar,normwt);
+	hist_mom->Fill(mom,normwt);
+	hist_mx2->Fill(mx2,normwt);
+	hist_W2->Fill(w2,normwt);
+	hist_missmass2->Fill(missmass2,normwt);
+	//
+      }//pid
+    }//entries
+
+
+    double momentum = hist_mom->GetMean();
+    int intgl = hist_pdelta->Integral();
+    int entries = hist_pdelta->GetEntries();
+
+ 
+    
+    TCanvas *c1 = new TCanvas("c1","c1", 1200, 800);
+    c1->Divide(4,4);
+  
+    c1->cd(1);//gPad->SetGrid();
+    hist_pdelta->Draw("hist");
+    hist_pdelta->SetLineWidth(1);
+    hist_pdelta->GetXaxis()->CenterTitle();
+    hist_pdelta->GetYaxis()->CenterTitle();
+    hist_pdelta->SetTitle(Form("SHMS Delta: %d",runs[r]));
+
+
+    c1->cd(2);
+    hist_hdelta->Draw("hist");
+    hist_hdelta->SetLineWidth(1);
+    hist_hdelta->GetXaxis()->CenterTitle();
+    hist_hdelta->GetYaxis()->CenterTitle();
+
+    c1->cd(3);
+    hist_z->Draw("hist");
+    hist_z->SetLineWidth(1);
+    hist_z->GetXaxis()->CenterTitle();
+    hist_z->GetYaxis()->CenterTitle();
+
+
+    c1->cd(4);
+    hist_x->Draw("hist");
+    hist_x->SetLineWidth(1);
+    hist_x->GetXaxis()->CenterTitle();
+    hist_x->GetYaxis()->CenterTitle();
+
+
+    c1->cd(5);
+    hist_hxptar->Draw("hist");
+    hist_hxptar->SetLineWidth(1);
+    hist_hxptar->GetXaxis()->CenterTitle();
+    hist_hxptar->GetYaxis()->CenterTitle();
+
+    c1->cd(6);
+    hist_hyptar->Draw("hist");
+    hist_hyptar->SetLineWidth(1);
+    hist_hyptar->GetXaxis()->CenterTitle();
+    hist_hyptar->GetYaxis()->CenterTitle();
+
+    c1->cd(7);
+    hist_pxptar->Draw("hist");
+    hist_pxptar->SetLineWidth(1);
+    hist_pxptar->GetXaxis()->CenterTitle();
+    hist_pxptar->GetYaxis()->CenterTitle();
+
+    c1->cd(8);
+    hist_pyptar->Draw("hist");
+    hist_pyptar->SetLineWidth(1);
+    hist_pyptar->GetXaxis()->CenterTitle();
+    hist_pyptar->GetYaxis()->CenterTitle();
+
+    c1->cd(9);
+    hist_weight->Draw("hist");
+    hist_weight->SetLineWidth(1);
+    hist_weight->GetXaxis()->CenterTitle();
+    hist_weight->GetYaxis()->CenterTitle();
+    
+    c1->cd(10);
+
+    hist_weightNorm->Draw("hist");
+    hist_weightNorm->SetLineWidth(1);
+    hist_weightNorm->GetXaxis()->CenterTitle();
+    hist_weightNorm->GetYaxis()->CenterTitle();
+
+    c1->cd(11);
+    hist_mom->Draw("hist");
+    hist_mom->SetLineWidth(1);
+    hist_mom->GetXaxis()->CenterTitle();
+    hist_mom->GetYaxis()->CenterTitle();
+
+    c1->cd(12);
+    hist_mx2->Draw("hist");
+    hist_mx2->SetLineWidth(1);
+    hist_mx2->GetXaxis()->CenterTitle();
+    hist_mx2->GetYaxis()->CenterTitle();
+
+
+    c1->cd(13);
+    hist_W2->Draw("hist");
+    hist_W2->SetLineWidth(1);
+    hist_W2->GetXaxis()->CenterTitle();
+    hist_W2->GetYaxis()->CenterTitle();
+
+
+    c1->cd(14);
+    hist_missmass2->Draw("hist");
+    hist_missmass2->SetLineWidth(1);
+    hist_missmass2->GetXaxis()->CenterTitle();
+    hist_missmass2->GetYaxis()->CenterTitle();
+    hist_mx2->Draw("hist same");
+    hist_mx2->SetLineColor(kRed);
+
+    // c1->SaveAs(Form("plots/hem_simc_deltacuts_xptarcuts_%d.pdf",runs[r]));
+    c1->SaveAs(Form("plots/hemsimc_nocuts_%d.pdf",runs[r]));
+    //c1->SaveAs(Form("plots/hemsimc_deltacuts_%d.pdf",runs[r]));
+    //c1->SaveAs(Form("plots/hemsimc_delta_xptarcuts_%d.pdf",runs[r]));
+    //c1->SaveAs(Form("plots/hemsimc_delta_xptar_mx2w2cuts_%d.pdf",runs[r]));
+
+    ofstream yieldsimc("textfiles/hemsimc_peterinfiles_nocuts.txt",ios::app);
+    //ofstream yieldsimc("textfiles/hemsimc_peterinfiles_deltacuts.txt",ios::app);
+    // ofstream yieldsimc("textfiles/hemsimc_peterinfiles_deltaxptarcuts.txt",ios::app);
+    //ofstream yieldsimc("textfiles/hemsimc_peterinfiles_deltaxptarmx2w2cuts.txt",ios::app);
+
+
+    yieldsimc<<runs[r]<<"\t\t"<<momentum<<"\t\t"<<intgl<<"\t\t"<<entries<<endl;
+    // cout<<runs[r]<<"\t\t"<<momentum<<"\t\t"<<intgl<<"\t\t"<<entries<<endl;
+
+    TFile *f1 = new TFile(Form("rootnewsimc/hemsimc_peterinfiles_nocuts_%d.root",runs[r]),"RECREATE");
+    //TFile *f1 = new TFile(Form("root/hemsimc_peterinfiles_deltacuts_%d.root",runs[r]),"RECREATE");
+    // TFile *f1 = new TFile(Form("root/hemsimc_peterinfiles_deltaxptarcuts_%d.root",runs[r]),"RECREATE");
+    //TFile *f1 = new TFile(Form("root/hemsimc_peterinfiles_deltaxptarmx2w2cuts_%d.root",runs[r]),"RECREATE");
+
+
+
+    hist_pdelta->Write();
+    hist_hdelta->Write();
+    hist_z->Write();
+    hist_x->Write();
+    hist_hxptar->Write();
+    hist_hyptar->Write();
+    hist_pxptar->Write();
+    hist_pyptar->Write();
+    hist_weight->Write();
+    hist_weightNorm->Write();
+    hist_mom->Write();
+    hist_W2->Write();
+    hist_mx2->Write();
+    hist_missmass2->Write();
+
+  }
+}
+
+
+
