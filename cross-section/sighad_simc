@@ -1,4 +1,34 @@
-//#define nruns 3
+The simcnorad cross-section from two methods is exactly same. See ethe last two columns in the textfile check_cs_oct28.txt
+/*
+I am getting the average sighad for the given z bin as: 
+
+Method 1:
+double Weight_sig = Weight*sighad;
+
+h1->Fill(z, Weight)
+h2->Fill(z, Weight_sig)
+
+the ratio of histograms: h2/h1 
+
+i.e., h->Divide(h2,h1)
+
+I am assuming the BinContents of h should be the average sighad for the given z bins.
+
+Method2: 
+
+Earlier, I tried to take the mean of sighad histogram for different cuts of z. The cuts in z were applied so that each cut is from the lower limit to the upper limit in z for the given z bin.
+
+For example, for one of the z bins (central z bin 0.425, when 20 bins from 0-1, bin width = 0.05)
+for (z >0.4 && z <= 0.45)
+{
+h1->Fill(sighad);
+}
+h1->GetMean();
+
+This would be the average sighad for this bin.
+
+*/
+
 void sighad_meanoverzbin_vs_ratiomethod(){
   gStyle->SetOptStat(1000011);
   gStyle->SetOptStat(1111111);
