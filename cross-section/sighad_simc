@@ -1,0 +1,255 @@
+//#define nruns 3
+void sighad_meanoverzbin_vs_ratiomethod(){
+  gStyle->SetOptStat(1000011);
+  gStyle->SetOptStat(1111111);
+  gROOT->SetBatch("kTRUE");
+  gStyle->SetPalette(1,0);
+  // gStyle->SetOptStat(1000011);
+  gStyle->SetOptFit(11);
+  gStyle->SetTitleOffset(1.,"Y");
+  gStyle->SetTitleOffset(.7,"X");
+  gStyle->SetLabelSize(0.08,"XY");
+  gStyle->SetLabelSize(0.08);
+  gStyle->SetTitleSize(0.08,"XY");
+  gStyle->SetPadLeftMargin(0.12);
+
+  const int runs[]={100,90,80,70,        140, 130, 120, 110,     180,170,160,150,  220,210,200, 190,     520,510,500      };
+  const double Q2value[]={4.0,4.0,4.0,4.0, 3.898,3.898,3.898,3.898,   4.75,4.75,4.75,4.75,    4.764,4.764,4.764,4.764,  5.5,5.5,5.5};
+  const double xvalue[]={0.35,0.35,0.35,0.35,  0.45,0.45,0.45,0.45,  0.45,0.45,0.45,0.45,  0.55,0.55,0.55,0.55,     0.6,0.6,0.6  };
+
+
+  //const int runs[]={100};//,90};//,80,70};//,        140, 130, 120, 110,     180,170,160,150,  220,210,200, 190,     520,510,500      };
+
+  
+   ofstream txtsimccs("textfiles/check_cs_oct28.txt",ios::app);
+ 
+  const int numRuns = sizeof(runs)/sizeof(*runs);
+ 
+
+  for (int r =0;r<numRuns;r++){
+
+
+    //get normfac
+  	 ifstream infile(Form("/lustre19/expphy/volatile/hallc/c-csv/hdbhatt/simcjuly22/outfiles/csv_%d_H2_pos_inc_rad.hist",runs[r]));
+
+
+    if(!infile){
+      cout<<"Input file doesn't exist!"<<endl;
+      exit(0);
+    }
+
+
+
+    TString tmp, content, text;
+
+    Ssiz_t from=0;
+    double normfac_value;
+
+    while(tmp.ReadLine(infile)){
+      if(tmp.Contains("normfac")){
+	tmp.Tokenize(content,from,"=");
+	text=atof(content.Data());
+	tmp.Tokenize(content,from,"=");
+	normfac_value=atof(content.Data());
+	from=0;
+      }
+    }
+    infile.close();
+
+    //cout<<runs[r]<<"\t\t"<<normfac_value<<endl;
+
+    const double normfac[]={normfac_value};
+  
+    
+
+    double Emiss,Weight,normwt,normwt_sig,spdelta,z,sighad,hsdelta,theta,mom,ptsquare,pt2calc,ptcalc;
+    double nu,q,pm,hxptar,hyptar,pxptar,pyptar,mx2,xbj,w,w2,pt,Q2;
+    TH1F * histz[20];
+    TH1F * histz_sig[20];
+    TH1F * histz_sig_over_histz[20];
+
+    TH1F * sigz[20];
+
+    TH1F * hpt[20];
+    TH1F * hpt2[20];
+    TH1F * hpt2calc[20];
+    Double_t pionmass   = 0.1395701835;    //Gev/c^2 
+    Double_t protonmass = 0.93827231;//GeV/c2
+
+
+    for(int i=0;i<20;i++){
+      histz[i]= new TH1F(Form("histz[%d]",i),"",20,0,1);
+      histz[i]->Sumw2();
+
+
+      histz_sig[i]= new TH1F(Form("histz_sig[%d]",i),"",20,0,1);
+      histz_sig[i]->Sumw2();
+
+      histz_sig_over_histz[i]= new TH1F(Form("histz_sig_over_histz[%d]",i),"",20,0,1);
+      histz_sig_over_histz[i]->Sumw2();
+
+      sigz[i]= new TH1F(Form("sigz[%d]",i),"",20,0,1.5);
+      sigz[i]->Sumw2();
+     
+     
+
+      hpt[i]= new TH1F(Form("hpt[%d]",i),"",20,0,0.4);
+      hpt[i]->Sumw2();
+      hpt2[i]= new TH1F(Form("hpt2[%d]",i),"",20,0,0.4);
+      hpt2[i]->Sumw2();
+    }
+    TH1F *histpt2 = new TH1F("histpt2","pt2 (GeV2);Counts; Pt2 Hist",20,0,0.4);
+    TH1F *histpt = new TH1F("histpt","pt (GeV);Pt Hist;Counts ",20,0,0.4);
+    TH1F *histx = new TH1F("histx","x;x Hist;Counts ",20,0,1);
+    TH1F *histQ2 = new TH1F("histQ2","Q2;Q2 Hist;Counts ",20,0,10);
+
+
+     TString filename  = Form("/lustre19/expphy/volatile/hallc/c-csv/hdbhatt/worksim/csv_%d_D2_pos_inc_norad.root",runs[r]);
+    TFile *f = new TFile(filename, "READ");
+    cout<< "Opening Run Num = "<<filename<<"\t"<< runs[r] <<endl;
+    if(f->IsZombie()){
+      std::cout << "Error opening file "<< std::endl;
+      continue;
+    }
+    TTree * tt = (TTree *)f->Get("h10");
+    Long64_t nentriesD = tt->GetEntries();
+    double rad_evts = nentriesD;
+
+    for (int kk=0; kk<nentriesD;  kk++){
+      tt->GetEntry(kk);
+
+      Emiss = tt->GetLeaf("Em")->GetValue();
+      Weight = tt->GetLeaf("Weight")->GetValue();
+      spdelta = tt->GetLeaf("ssdelta")->GetValue();
+      hsdelta = tt->GetLeaf("hsdelta")->GetValue();
+      z = tt->GetLeaf("z")->GetValue();
+      sighad = tt->GetLeaf("sighad")->GetValue();
+      theta = tt->GetLeaf("thetapq")->GetValue();
+      mom = tt->GetLeaf("ppi")->GetValue();
+      ptsquare = tt->GetLeaf("pt2")->GetValue();
+      nu = tt->GetLeaf("nu")->GetValue();
+      q = tt->GetLeaf("q")->GetValue();
+      Q2 = tt->GetLeaf("Q2")->GetValue();
+      pm= tt->GetLeaf("Pm")->GetValue();
+      hxptar=tt->GetLeaf("hsxptar")->GetValue();
+      hyptar=tt->GetLeaf("hsyptar")->GetValue();
+      pxptar=tt->GetLeaf("ssxptar")->GetValue();
+      pyptar=tt->GetLeaf("ssyptar")->GetValue();
+      xbj = tt->GetLeaf("xbj")->GetValue();
+      w = tt->GetLeaf("W")->GetValue();
+      mx2 = (protonmass + nu - z*nu) * (protonmass + nu - z*nu) - abs(pm)*abs(pm);
+      w2=w*w;
+      normwt = Weight*normfac_value/rad_evts;
+      normwt_sig=normwt*sighad;
+      pt=sqrt(ptsquare);
+
+      if(spdelta>-10&&spdelta<20 &&hsdelta>-8&&hsdelta<8 && w2 > 4 && mx2 > 2.4 && hxptar>-0.08 && hxptar<0.08&&hyptar>-0.04&&hyptar<0.04  && pxptar>-0.05&&pxptar<0.05&&pyptar>-0.04&&pyptar<0.04){
+	
+	histpt2->Fill(ptsquare);
+	histpt->Fill(pt);
+	histQ2->Fill(Q2);
+	histx->Fill(xbj);
+
+
+	for(int i=0;i<20;i++){
+	  if(z > (0.05*i)  &&  (z<=0.05+0.05*i)){
+	
+	    sigz[i]->Fill(sighad,normwt);
+	    histz[i]->Fill(z,normwt);
+	    histz_sig[i]->Fill(z,normwt_sig);
+	    hpt2[i]->Fill(ptsquare);
+	    hpt[i]->Fill(pt);
+
+	 
+	     
+	  }//cut
+	}//zbins
+      }//pid
+    }//entries
+
+    double meanQ2=histQ2->GetMean();
+    double meanx=histx->GetMean();
+
+    for(int i = 0;i<20;i++){
+      // if(sigz[i]->GetMean()!=0){
+ if(sigz[i]->GetMean()>0){
+	//pt and pt2 	txtsimccs<<"H2+"<<"  "<<runs[r]<<"  "<<setprecision(3)<<fixed<<(i)*0.05<< "  "<<(histz[i]->GetBinCenter(i))<<"   "<<sigz[i]->GetMean()<<"  "<<hpt[i]->GetMean()<<"  "<<hpt2[i]->GetMean()<<endl;
+
+      histz_sig_over_histz[i]->Divide(histz_sig[i],histz[i]);
+
+      //  txtsimccs<<meanQ2<<"  "<<meanx<<"   "<<runs[r]<<"  "<<setprecision(3)<<fixed<< "  "<<(histz[i]->GetBinCenter(i))<<"   "<<sigz[i]->GetMean()<<"  "<<histz_sig_over_histz[i]->GetBinContent(i+1)<<endl;
+
+      txtsimccs<<runs[r]<<"  "<<meanx<<"   "<<Q2value[r]<<"  "<<xvalue[r]<<"  "<<setprecision(3)<<fixed<< "  "<<(histz[i]->GetBinCenter(i))<<"   "<<sigz[i]->GetMean()<<"  "<<histz_sig_over_histz[i]->GetBinContent(i+1)<<endl;;
+
+	  //(sigz[i]->GetBinContent(i))<<endl;
+
+	  //<<"   "<<sigz[i]->GetMeanError()<<endl;
+	
+	 }
+    }
+
+    cout<<runs[r]<<"  "<<normfac_value<<endl;
+  
+    
+    TCanvas *c1 = new TCanvas("c1","c1", 1200, 800);
+    c1->Divide(4,5);
+    for(int i = 1;i<21;i++){
+      c1->cd(i);
+      sigz[i]->Draw("hist");
+      sigz[i]->SetTitle(Form("SIGHAD: z=> (%.5f - %.5f)",0.05*i-0.05, 0.05*i ));//make same as cuts above
+      sigz[i]->SetLineWidth(2);
+    
+    }
+
+    c1->SaveAs(Form("plots/zplots_weighted_d2pos_%d.pdf",runs[r]));
+
+
+ 
+    TCanvas *c2 = new TCanvas("c2","c2", 1200, 800);
+    c2->Divide(4,5);
+    for(int i = 1;i<21;i++){
+      c2->cd(i);
+      hpt2[i]->Draw("hist");
+      hpt2[i]->SetTitle(Form("Pt2: z=> (%.5f - %.5f)",0.05*i-0.05, 0.05*i ));//make same as cuts above
+      hpt2[i]->SetLineWidth(2);
+      
+    }
+
+    c2->SaveAs(Form("plots/ptplots_weighted_d2pos_%d.pdf",runs[r]));
+
+    
+    TCanvas *c3 = new TCanvas("c3","c3", 1200, 800);
+    c3->Divide(4,5);
+    for(int i = 1;i<21;i++){
+      c3->cd(i);
+      hpt[i]->Draw("hist");
+      hpt[i]->SetTitle(Form("Pt: z=> (%.5f - %.5f)",0.05*i-0.05, 0.05*i ));//make same as cuts above
+      hpt[i]->SetLineWidth(2);
+      
+    }
+
+    c3->SaveAs(Form("plots/ptplots_weighted_d2pos_%d.pdf",runs[r]));
+
+    
+
+    TCanvas *c4 = new TCanvas("c4","c4", 1200, 800);
+    c4->Divide(2,2);
+    c4->cd(1);
+    histpt->Draw("hist");
+    histpt->SetLineWidth(2);
+    c4->cd(2);
+    histpt2->Draw("hist");
+    histpt2->SetLineWidth(2);
+
+    c4->SaveAs(Form("plots/ptplots_d2pos_%d.pdf",runs[r]));
+
+    
+  }
+}
+
+
+
+
+
+
+
