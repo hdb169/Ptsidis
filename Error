@@ -14,3 +14,8 @@ check it and see the differences:
 Now what are delta A, delta B , delta C, and delta D?
 =================
 Here 
+
+Error for yield with accidental subtraction
+
+Yield = (coin_integral - accidental_integral)/(charge*efficiency)
+yield_err = sqrt(coin_integral + accidental_integral)/(charge*efficiency)
